@@ -7,3 +7,5 @@ data/
 
 # Ignore notebook checkpoints
 .ipynb_checkpoints/
+.venv/
+interim_report/
