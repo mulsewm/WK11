@@ -3,7 +3,7 @@ __pycache__/
 *.pyc
 
 # Ignore data files (if needed)
-interim_report/data/
+data/
 
 # Ignore notebook checkpoints
 .ipynb_checkpoints/

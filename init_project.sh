@@ -5,10 +5,10 @@
 
 # Define folder structure
 FOLDERS=(
-  "interim_report/reports"
-  "interim_report/data"
-  "interim_report/scripts"
-  "interim_report/notebooks"
+  "reports"
+  "data"
+  "scripts"
+  "notebooks"
 )
 
 # Create folders
@@ -29,7 +29,7 @@ EOF
 echo "Created README.md"
 
 # Interim report markdown file
-cat <<EOF > interim_report/reports/Interim_Report.md
+cat <<EOF > reports/Interim_Report.md
 # Interim Report – Task 1
 **Data Preprocessing, Cleaning, and Exploratory Analysis**
 
@@ -54,10 +54,10 @@ cat <<EOF > interim_report/reports/Interim_Report.md
 *Summarize the main insights from your exploratory analysis.*
 
 EOF
-echo "Created Interim_Report.md in interim_report/reports"
+echo "Created Interim_Report.md in reports"
 
 # Placeholder Python script for data extraction and processing
-cat <<EOF > interim_report/scripts/main.py
+cat <<EOF > scripts/main.py
 #!/usr/bin/env python3
 """
 This script is a placeholder for data extraction, cleaning, and exploratory analysis for Task 1.
@@ -76,8 +76,8 @@ if __name__ == "__main__":
     tsla_data = fetch_data("TSLA", "2015-01-01", "2025-01-31")
     print(tsla_data.head())
 EOF
-chmod +x interim_report/scripts/main.py
-echo "Created main.py in interim_report/scripts and set executable permissions"
+chmod +x scripts/main.py
+echo "Created main.py in scripts and set executable permissions"
 
 # Create a basic .gitignore file
 cat <<EOF > .gitignore
@@ -86,7 +86,7 @@ __pycache__/
 *.pyc
 
 # Ignore data files (if needed)
-interim_report/data/
+data/
 
 # Ignore notebook checkpoints
 .ipynb_checkpoints/
