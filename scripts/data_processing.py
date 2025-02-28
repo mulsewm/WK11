@@ -11,6 +11,12 @@ import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
+
+
+os.makedirs("data", exist_ok=True)
+# tsla_df.to_csv("data/TSLA_cleaned.csv", index=False)
+# print("Saved TSLA cleaned data to data/TSLA_cleaned.csv")
 
 # Set the plotting style
 sns.set(style="whitegrid")
@@ -85,5 +91,5 @@ plt.tight_layout()
 plt.show()
 
 # Save the cleaned TSLA data to CSV for further analysis
-tsla_df.to_csv("/data/TSLA_cleaned.csv", index=False)
+tsla_df.to_csv("data/TSLA_cleaned.csv", index=False)
 print("Saved TSLA cleaned data to data/TSLA_cleaned.csv")
