@@ -1,4 +1,3 @@
-Below is an updated version of the **README.md** that reflects your progress beyond the interim report and outlines the final deliverables for the GMF Investments Challenge. You can replace the existing text in your repository’s README.md with the following:
 
 ```markdown
 # GMF Investments Challenge – Week 11
